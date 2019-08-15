@@ -1,6 +1,6 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -20,19 +20,25 @@ module.exports = {
           'sass-loader',
         ],
       },
-
+      {
+        test: /\.html$/,
+        loader: "file-loader",
+        options: {
+          name: "[name].html",
+        }
+      }
     ]
   },
   plugins: [
     new MiniCssExtractPlugin({
       filename: "[name].css",
     }),
-    new HtmlWebpackPlugin({
-      filename: "unique_tech.html",
-      meta: {viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no'},
-    }),
   ],
   devServer: {
     overlay: true,
+    publicPath: "/dist/",
+  },
+  optimization: {
+    minimizer: [new OptimizeCSSAssetsPlugin({})],
   },
 };
