@@ -1,6 +1,7 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -28,11 +29,16 @@ module.exports = {
       filename: "[name].css",
     }),
     new HtmlWebpackPlugin({
+      title: "Unique Tech",
       filename: "unique_tech.html",
       meta: {viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no'},
     }),
   ],
   devServer: {
     overlay: true,
+    publicPath: "/dist/",
+  },
+  optimization: {
+    minimizer: [new OptimizeCSSAssetsPlugin({})],
   },
 };
