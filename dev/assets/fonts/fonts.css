@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "Roboto-Bold";
+  src: local("Roboto-Bold"),
+  url("../fonts/Roboto/Roboto-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: local("Roboto-Regular"),
+  url("../fonts/Roboto/Roboto-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Light";
+  src: local("Roboto-Light"),
+  url("../fonts/Roboto/Roboto-Light.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Black";
+  src: local("Roboto-Black"),
+  url("../fonts/Roboto/Roboto-Black.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: local("Roboto-Medium"),
+  url("../fonts/Roboto/Roboto-Medium.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Thin";
+  src: local("Roboto-Thin"),
+  url("../fonts/Roboto/Roboto-Thin.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SourceSansPro-Bold";
+  src: local("SourceSansPro-Bold"),
+    url("../fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf");
+}
+
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: local("OpenSans-Bold"),
+  url("../fonts/Open_Sans/OpenSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "MyriadPro-Regular";
+  src: local("MyriadPro-Regular"),
+    url("../fonts/Myriad-Pro/MyriadPro-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
