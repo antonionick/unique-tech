@@ -26,7 +26,15 @@ module.exports = {
         options: {
           name: "[name].html",
         }
-      }
+      },
+      {
+        test: /.(woff(2)?|ttf|otf|svg|eot)(\?v=\d+\.\d+\.\d+)?$/,
+        loader: "file-loader",
+        options: {
+          name: "[name].[ext]",
+          outputPath: "fonts/",
+        }
+      },
     ]
   },
   plugins: [
