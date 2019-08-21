@@ -1,0 +1,88 @@
+.header {
+  background: $main-color;
+
+  &__wrapper-logo {
+    padding: 80px 0 76px;
+  }
+
+  &__wrapper-info {
+    padding-bottom: 58px;
+  }
+
+  &__nav {
+    width: 63%;
+    align-self: center;
+    font-size: $regular-size-text;
+
+    &-second-layer {
+      font-family: Roboto-Black, ﻿AdobeInvisFont, ﻿MyriadPro-Regular, sans-serif;
+      position: absolute;
+      bottom: -20px;
+      left: -35%;
+      right: 0;
+      font-size: 1em;
+    }
+  }
+
+  &__nav-item {
+    text-align: right;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color ($regular-time-transition / 2);
+
+    &:hover {
+      border-bottom: 2px solid yellow;
+    }
+  }
+
+  &__title-info {
+    font-size: 42px;
+    letter-spacing: .3px;
+    line-height: 1.2em;
+  }
+
+  &__text {
+    max-width: 362px;
+    max-height: 270px;
+    margin: 6px 0 23px;
+    line-height: 1.9em;
+  }
+
+  &__wrapper-img{
+    position: relative;
+    overflow: visible;
+    margin-top: 55px;
+    max-width: 625px;
+    max-height: 358px;
+    width: 200%;
+    height: 200%;
+
+    &_arrow {
+      top: -2%;
+      right: -63%;
+      max-width: 390px;
+      transform: rotate(-1deg);
+    }
+  }
+
+  &__img {
+    position: absolute;
+    left: -35px;
+  }
+
+  &__slider {
+    margin: 0 0 20px 5px;
+  }
+
+  &_button-effect {
+    box-shadow: 0 0 6px 3px #d9a330;
+
+    &:hover {
+      box-shadow: 0 0 12px 4px #be8434;
+    }
+
+    &:active {
+      box-shadow: none;
+    }
+  }
+}
