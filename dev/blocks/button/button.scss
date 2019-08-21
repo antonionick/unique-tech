@@ -1,0 +1,25 @@
+.button {
+  display: block;
+  box-sizing: border-box;
+  width: 152px;
+  padding: 14px 0;
+  text-align: center;
+  text-decoration: none;
+  color: rgba(253, 252, 252, 255);
+  background: $main-text-color;
+  border-radius: 4px;
+  box-shadow: 0 0 2px 1px #d9d9d9;
+  transition: box-shadow $regular-time-transition;
+
+
+  &__text {
+    font-family: Roboto-Regular, ﻿AdobeInvisFont, ﻿MyriadPro-Regular, sans-serif;
+    font-size: 16px;
+  }
+
+  &__icon {
+    margin-left: 5px;
+    transform: rotate(50deg);
+    font-size: 22px;
+  }
+}

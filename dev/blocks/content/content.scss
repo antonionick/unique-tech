@@ -1,0 +1,56 @@
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+
+  &__title {
+    margin: 0 0 23px;
+    font-family: Roboto-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular, sans-serif;
+    font-size: 18px;
+    color: rgba(37, 37, 37, 255);
+    text-align: left;
+  }
+
+  &__text {
+    max-width: 462px;
+    margin: 0;
+    padding: 0 2px;
+    overflow: hidden;
+    font-family: Roboto-Light, ﻿AdobeInvisFont, ﻿MyriadPro-Regular, sans-serif;
+    font-size: 16px;
+    color: rgba(54, 54, 54, 255);
+  }
+
+  &__wrapper-img {
+    display: block;
+    overflow: hidden;
+    max-width: 416px;
+    max-height: 252px;
+
+    &_arrow {
+      position: absolute;
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  &_size {
+    @for $i from 1 through 9 {
+      &_#{$i * 10} {
+        width: #{$i * 10%};
+      }
+    }
+  }
+
+  &_color {
+    &_white {
+      color: white;
+    }
+  }
+}

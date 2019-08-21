@@ -1,0 +1,48 @@
+.list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &_slider {
+    justify-content: center;
+  }
+
+  &__item {
+    position: relative;
+    font-family: Roboto-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular, sans-serif;
+    font-size: $regular-size-text;
+    color: $main-text-color;
+
+    &_hidden {
+      display: none;
+    }
+
+    &-slider {
+      width: 10px;
+      height: 10px;
+      margin: 0 2px;
+      background: $main-text-color;
+      border-radius: 50%;
+      transition: background-color $regular-time-transition;
+
+      &:hover {
+        cursor: pointer;
+        background: white;
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &_active {
+        background: white;
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.page {
+  width: $main-width;
+  margin: 0 auto;
+
+  &__link {
+    color: inherit;
+    text-decoration: none;
+  }
+}

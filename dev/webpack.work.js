@@ -1,1 +1,2 @@
-import "./unique_tech.scss";
+import "./unique_tech.html";
+import "./scss/unique_tech.scss";
