@@ -1,16 +1,22 @@
 .button {
   display: block;
   box-sizing: border-box;
-  width: 152px;
-  padding: 14px 0;
   text-align: center;
-  text-decoration: none;
-  color: rgba(253, 252, 252, 255);
+  width: 152px;
+  padding: 15px 0;
+  color: white;
   background: $main-text-color;
   border-radius: 4px;
-  box-shadow: 0 0 2px 1px #d9d9d9;
+  box-shadow: 0 0 3px 1px #d9d9d9;
   transition: box-shadow $regular-time-transition;
 
+  &:hover {
+    box-shadow: 0 0 3px 1px #c4c4c4;
+  }
+
+  &:active {
+    box-shadow: none;
+  }
 
   &__text {
     font-family: Roboto-Regular, ﻿AdobeInvisFont, ﻿MyriadPro-Regular, sans-serif;
@@ -21,5 +27,10 @@
     margin-left: 5px;
     transform: rotate(50deg);
     font-size: 22px;
+  }
+
+  &_theme_sun {
+    background: $main-color;
+    color: $main-text-color;
   }
 }

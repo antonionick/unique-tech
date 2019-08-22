@@ -1,0 +1,59 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__title {
+    align-self: center;
+    width: 330px;
+    padding: 13px 0;
+    font-family: SourceSansPro-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular, sans-serif;
+    font-size: 26px;
+    text-align: center;
+    color: white;
+    background: $main-text-color;
+    border-radius: 4px;
+    box-shadow: 0 0 6px 2px #bababa;
+    transition: box-shadow $regular-time-transition;
+
+    &:hover {
+      box-shadow: 0 0 6px 2px #9b9b9b;
+    }
+
+    &:active {
+      box-shadow: none;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    display: block;
+
+    &_theme_common {
+      top: 28px;
+      right: 26%;
+    }
+  }
+
+  &_dir_row {
+    flex-direction: row;
+  }
+
+  &_section {
+    &_we-do {
+      margin: 141px 0 130px;
+    }
+  }
+
+  &_content {
+    &-we-do {
+      max-width: 953px;
+      margin: 206px auto 0;
+
+      &-first {
+        margin-top: 182px;
+      }
+    }
+  }
+}
