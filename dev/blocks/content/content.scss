@@ -2,24 +2,25 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   box-sizing: border-box;
 
   &__title {
-    margin: 0 0 23px;
+    margin: 0 0 13px;
+    box-sizing: border-box;
     font-family: Roboto-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular, sans-serif;
     font-size: 18px;
     color: rgba(37, 37, 37, 255);
-    text-align: left;
   }
 
   &__text {
     max-width: 462px;
-    margin: 0;
+    max-height: 149px;
+    margin: 0 0 17px;
     padding: 0 2px;
     overflow: hidden;
     font-family: Roboto-Light, ﻿AdobeInvisFont, ﻿MyriadPro-Regular, sans-serif;
-    font-size: 16px;
+    font-size: 14.9px;
+    line-height: 1.5em;
     color: rgba(54, 54, 54, 255);
   }
 
@@ -28,16 +29,17 @@
     overflow: hidden;
     max-width: 416px;
     max-height: 252px;
-
-    &_arrow {
-      position: absolute;
-    }
   }
 
   &__img {
     display: block;
     width: 100%;
     height: 100%;
+
+    &_size_l {
+      height: 110%;
+      width: 102%;
+    }
   }
 
   &_size {
@@ -51,6 +53,19 @@
   &_color {
     &_white {
       color: white;
+    }
+  }
+
+  &_justify {
+    &_between {
+      justify-content: space-between;
+    }
+  }
+
+  &_order {
+    &_first {
+      order: -1;
+      left: 0;
     }
   }
 }

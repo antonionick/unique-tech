@@ -36,6 +36,7 @@
   }
 
   &__title-info {
+    margin: 0 0 23px;
     font-size: 42px;
     letter-spacing: .3px;
     line-height: 1.2em;
@@ -46,9 +47,10 @@
     max-height: 270px;
     margin: 6px 0 23px;
     line-height: 1.9em;
+    font-size: 16px;
   }
 
-  &__wrapper-img{
+  &__wrapper-img {
     position: relative;
     overflow: visible;
     margin-top: 55px;
@@ -56,13 +58,13 @@
     max-height: 358px;
     width: 200%;
     height: 200%;
+  }
 
-    &_arrow {
-      top: -2%;
-      right: -63%;
-      max-width: 390px;
-      transform: rotate(-1deg);
-    }
+  &__arrow {
+    top: -2%;
+    right: -63%;
+    max-width: 390px;
+    transform: rotate(-1deg);
   }
 
   &__img {
@@ -75,10 +77,10 @@
   }
 
   &_button-effect {
-    box-shadow: 0 0 6px 3px #d9a330;
+    box-shadow: 0 0 6px 2px #d9a330;
 
     &:hover {
-      box-shadow: 0 0 12px 4px #be8434;
+      box-shadow: 0 0 8px 3px #be8235;
     }
 
     &:active {
