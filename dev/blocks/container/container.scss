@@ -29,10 +29,15 @@
   &__arrow {
     position: absolute;
     display: block;
+    top: 28px;
 
     &_theme_common {
-      top: 28px;
       right: 26%;
+    }
+
+    &_theme_left {
+      left: 26%;
+      transform: scale(-1, 1);
     }
   }
 
@@ -42,17 +47,32 @@
 
   &_section {
     &_we-do {
-      margin: 141px 0 130px;
+      padding: 141px 0 130px;
+    }
+
+    &_we-work {
+      background: #f9f9f9;
+      padding: 86px 0 110px;
     }
   }
 
   &_content {
     &-we-do {
-      max-width: 953px;
+      max-width: 945px;
       margin: 206px auto 0;
 
       &-first {
-        margin-top: 182px;
+        margin-top: 184px;
+      }
+    }
+
+    &-we-work {
+      margin-top: 147px;
+
+      &_img {
+        margin: 0 auto;
+        max-width: 991px;
+        max-height: 855px;
       }
     }
   }
