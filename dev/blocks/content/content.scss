@@ -10,6 +10,13 @@
     font-family: Roboto-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular, sans-serif;
     font-size: 18px;
     color: rgba(37, 37, 37, 255);
+
+    &_theme_small {
+      margin: 0 0 3px;
+      font-family: Roboto-Regular, ﻿AdobeInvisFont, ﻿MyriadPro-Regular, sans-serif;
+      font-weight: 300;
+      color: rgba(58, 58, 58, 255);
+    }
   }
 
   &__text {
@@ -22,6 +29,14 @@
     font-size: 14.9px;
     line-height: 1.5em;
     color: rgba(54, 54, 54, 255);
+
+    &_theme_small {
+      max-height: 75px;
+      margin: 0;
+      padding: 0;
+      font-size: 14px;
+      line-height: 1.8em;
+    }
   }
 
   &__wrapper-img {
@@ -66,6 +81,10 @@
   &_color {
     &_white {
       color: white;
+    }
+
+    &-bg-main {
+      background: $main-color;
     }
   }
 
