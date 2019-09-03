@@ -54,6 +54,19 @@
       background: #f9f9f9;
       padding: 86px 0 110px;
     }
+
+    &_features {
+      padding: 134px 0 161px;
+
+      &-offsets {
+        margin-top: 53px;
+      }
+
+      &-wrapper {
+        flex-wrap: wrap;
+        margin-top: 150px;
+      }
+    }
   }
 
   &_content {

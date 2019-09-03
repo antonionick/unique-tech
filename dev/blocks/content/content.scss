@@ -42,6 +42,19 @@
     }
   }
 
+  &__icon {
+    position: absolute;
+    left: 10px;
+    top: 23px;
+    font-size: 28px;
+  }
+
+  &_theme_small {
+    max-height: 140px;
+    width: 32%;
+    padding: 20px 9px 9px 51px;
+  }
+
   &_size {
     @for $i from 1 through 9 {
       &_#{$i * 10} {
