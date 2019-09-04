@@ -83,6 +83,14 @@
       color: white;
     }
 
+    &_main-text {
+      color: $main-text-color;
+    }
+
+    &_main {
+      color: $main-color;
+    }
+
     &-bg-main {
       background: $main-color;
     }

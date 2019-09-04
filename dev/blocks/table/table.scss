@@ -1,0 +1,118 @@
+.table-wrapper {
+  max-width: 833px;
+  margin: 0 auto;
+}
+
+.table {
+  display: table;
+  width: 100%;
+
+  &__row {
+    display: table-row;
+    width: 100%;
+  }
+
+  &__column {
+    position: relative;
+    display: table-cell;
+    width: 260px;
+    height: 45px;
+    vertical-align: middle;
+    text-align: center;
+    border: 1px solid $main-color;
+
+    &:first-child {
+      border-left: none;
+    }
+
+    &:last-child {
+      border-right: none;
+    }
+
+    &_size_more {
+      width: 309px;
+      border-left-color: $color-red;
+      border-right-color: $color-red;
+    }
+
+    &_prices {
+      height: 89px;
+      vertical-align: bottom;
+    }
+  }
+
+  &__title {
+    position: absolute;
+    top: -7px;
+    left: 0;
+    right: 0;
+    font-family: Roboto-Regular, ﻿AdobeInvisFont, ﻿MyriadPro-Regular, sans-serif;
+    font-size: 22px;
+    color: rgba(141, 141, 141, 255);
+
+    &_size_more {
+      top: -22px;
+      color: $color-red;
+      font-size: 28px;
+    }
+  }
+
+  &__text {
+    font-family: Roboto-Medium, ﻿AdobeInvisFont, ﻿MyriadPro-Regular, sans-serif;
+    color: rgba(179, 179, 179, 255);
+
+    &_size_more {
+      font-size: 18px;
+      color: black;
+    }
+  }
+
+  &__price {
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    font-size: 25px;
+
+    &-number {
+      font-size: 34px;
+
+      &_size_more {
+        font-size: 67px;
+      }
+    }
+
+    &_size_more {
+      bottom: -24px;
+    }
+  }
+
+  &_no-border {
+    &_top {
+      border-top: none;
+    }
+
+    &_right {
+      border-right: none;
+    }
+
+    &_bottom {
+      border-bottom: none;
+    }
+
+    &_left {
+      border-left: none;
+    }
+
+    &_all {
+      border: none;
+    }
+  }
+
+  &_color {
+    &_red {
+      color: $color-red;
+    }
+  }
+}
+
