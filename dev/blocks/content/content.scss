@@ -44,6 +44,13 @@
     overflow: hidden;
     max-width: 416px;
     max-height: 252px;
+
+    &_large {
+      max-width: 498px;
+      max-height: 503px;
+      height: 463px;
+      background: white;
+    }
   }
 
   &__img {
@@ -54,6 +61,12 @@
     &_size_l {
       height: 101%;
       width: 102%;
+    }
+
+    &_large {
+      width: 90%;
+      height: 438px;
+      margin: 13px auto 0;
     }
   }
 
