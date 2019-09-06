@@ -45,6 +45,7 @@
     flex-direction: row;
   }
 
+  //SECTION
   &_section {
     &_we-do {
       padding: 141px 0 130px;
@@ -135,8 +136,24 @@
         right: 20%;
       }
     }
+
+    &_creative {
+      padding-bottom: 83px;
+
+      &-page {
+        padding: 133px 0 56px;
+        box-shadow: 0 0 2px 1px #fffaf6;
+      }
+
+      &-info {
+        justify-content: space-between;
+        align-items: center;
+        padding: 22px 31px 23px 46px;
+      }
+    }
   }
 
+  //CONTENT
   &_content {
     &-we-do {
       max-width: 945px;
@@ -335,6 +352,7 @@
         &-text {
           font-family:﻿OpenSans-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular, sans-serif;
           font-size: 12px;
+          font-weight: bold;
         }
       }
 
@@ -347,6 +365,48 @@
         position: absolute;
         top: 12px;
         left: -11px;
+      }
+    }
+
+    &_creative {
+      &-wrapper-img {
+        position: relative;
+        max-width: 100%;
+        max-height: 417px;
+      }
+
+      &-img {
+        margin-top: -111px;
+      }
+
+      &-layer-img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #ffc038;
+        opacity: 0.5;
+      }
+
+      &-text {
+        margin: 0;
+        font-family: OpenSans-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular, sans-serif;
+        font-size: 22px;
+        color: white;
+        text-transform: uppercase;
+      }
+
+      &-button {
+        width: 159px;
+        padding: 12px 0 10px;
+        font-family:﻿OpenSans-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        color: rgba(58, 58, 58, 255);
+        letter-spacing: -.5px;
+        background: white;
+        box-shadow: 0 2px 2px 1px #d9a330;
       }
     }
   }
