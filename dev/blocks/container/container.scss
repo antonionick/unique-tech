@@ -100,6 +100,28 @@
         background: #f4f4f4;
       }
     }
+
+    &_team {
+      &-title {
+        width: 447px;
+        margin-bottom: 140px;
+      }
+
+      &-arrow {
+        left: 20%;
+      }
+
+      &-info {
+        padding: 61px 0 18px;
+        background: $main-color;
+      }
+
+      &-page {
+        max-width: 813px;
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
   }
 
   &_content {
@@ -246,6 +268,43 @@
           left: -615px;
         }
       }
+    }
+
+    &_team {
+      width: 20%;
+
+      &-title {
+        margin-bottom: 10px;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+      }
+
+      &-text {
+        max-width: 100%;
+        max-height: 150px;
+        margin-bottom: 0;
+        font-family: Roboto-Thin, ﻿AdobeInvisFont, ﻿MyriadPro-Regular, sans-serif;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+      }
+
+      &-wrapper-img {
+        max-width: 125px;
+        max-height: 125px;
+        width: 75%;
+        height: 100%;
+        margin: 0 auto 18px;
+        border-radius: 50%;
+        background: #ebebeb;
+      }
+
+       &-img {
+         margin: 10% auto 0;
+         width: 90%;
+         height: 90%;
+       }
     }
   }
 }
