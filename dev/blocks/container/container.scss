@@ -81,6 +81,25 @@
       padding: 65px 0 66px;
       background: #f9f9f9;
     }
+
+    &_business {
+      padding: 146px 0 116px;
+
+      &-title {
+        width: 447px;
+        margin-bottom: 134px;
+      }
+
+      &-arrow {
+        right: 20%;
+      }
+
+      &-info {
+        flex-wrap: wrap;
+        padding: 89px 96px 70px 98px;
+        background: #f4f4f4;
+      }
+    }
   }
 
   &_content {
@@ -163,6 +182,69 @@
         font-family: OpenSans-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular, sans-serif;
         font-size: 12px;
         text-transform: uppercase;
+      }
+    }
+
+    &_business {
+      width: 25%;
+
+      &-next-layer {
+        margin-top: 26px;
+      }
+
+      &_title {
+        text-align: center;
+        font-size: 16px;
+        color: rgba(106, 106, 106, 255);
+
+        &-large {
+          margin-top: 22px;
+        }
+      }
+
+      &-wrapper-img {
+        position: relative;
+        margin-bottom: 32px;
+        width: 100%;
+        height: 135px;
+      }
+
+      &-img {
+        position: absolute;
+        height: 135px;
+        width: 400%;
+
+        &-1 {
+          left: 10px;
+        }
+
+        &-2 {
+          left: -200px;
+        }
+
+        &-3 {
+          left: -415px;
+        }
+
+        &-4 {
+          left: -620px;
+        }
+
+        &-5 {
+          left: 45px;
+        }
+
+        &-6 {
+          left: -180px;
+        }
+
+        &-7 {
+          left: -397px;
+        }
+
+        &-8 {
+          left: -615px;
+        }
       }
     }
   }
