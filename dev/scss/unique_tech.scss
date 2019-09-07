@@ -1,6 +1,13 @@
 @import "../assets/fonts/fonts.css";
 @import "~normalize.css";
 @import "helpers/variables";
+@import "../../dev/blocks/page/page";
+@import "../../dev/blocks/logo/logo";
+@import "../../dev/blocks/list/list";
+@import "../../dev/blocks/button/button";
+@import "../../dev/blocks/content/content";
+@import "../../dev/blocks/container/container";
 @import "../../dev/blocks/table/table";
 @import "layout/header";
+@import "layout/footer";
 @import "~@fortawesome/fontawesome-free/css/all.css";
