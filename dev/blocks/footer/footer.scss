@@ -1,5 +1,5 @@
 .footer {
-  padding: 45px 0 33px;
+  padding: 45px 0 34px;
   background: #363636;
 
   &__lists {
@@ -10,6 +10,14 @@
   &__links {
     margin-bottom: 27px;
     justify-content: center;
+  }
+
+  &__copyright {
+    display: block;
+    font-family:﻿Roboto-Light, ﻿AdobeInvisFont, ﻿SimSun, ﻿MyriadPro-Regular, sans-serif;
+
+    color: rgba(170, 178, 189, 255);
+    text-align: center;
   }
 
   &__c-list {
