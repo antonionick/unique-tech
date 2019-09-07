@@ -1,0 +1,79 @@
+.footer {
+  padding: 45px 0 34px;
+  background: #363636;
+
+  &__lists {
+    margin-bottom: 50px;
+    justify-content: flex-start;
+  }
+
+  &__links {
+    margin-bottom: 27px;
+    justify-content: center;
+  }
+
+  &__copyright {
+    display: block;
+    font-family:﻿Roboto-Light, ﻿AdobeInvisFont, ﻿SimSun, ﻿MyriadPro-Regular, sans-serif;
+
+    color: rgba(170, 178, 189, 255);
+    text-align: center;
+  }
+
+  &__c-list {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: 146px;
+  }
+
+  &__c-title {
+    margin-bottom: 33px;
+    font-family: Roboto-Medium, ﻿AdobeInvisFont, ﻿SimSun, ﻿MyriadPro-Regular, sans-serif;
+    font-size: 18px;
+    color: rgba(230, 233, 237, 255);
+  }
+
+  &__c-item {
+    margin-bottom: 14px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &_link {
+      width: 40px;
+      height: 40px;
+      margin-right: 5px;
+      text-align: center;
+      background: $main-color;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px 2px #4b4b4b;
+      transition: box-shadow $regular-time-transition;
+
+      &:active {
+        box-shadow: none;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__c-text {
+    font-family: Roboto-Light, ﻿AdobeInvisFont, ﻿SimSun, ﻿MyriadPro-Regular, sans-serif;
+    color: rgba(170, 178, 189, 255);
+    border-bottom: 2px solid transparent;
+    transition: border-bottom $regular-time-transition;
+
+    &:hover {
+      border-bottom: 2px solid #e6e9ed;
+    }
+
+    &_link {
+      font-size: 15px;
+      line-height: 40px;
+      color: white;
+    }
+  }
+}
