@@ -3,8 +3,13 @@
   background: #363636;
 
   &__lists {
-    margin-bottom: 52px;
+    margin-bottom: 50px;
     justify-content: flex-start;
+  }
+
+  &__links {
+    margin-bottom: 27px;
+    justify-content: center;
   }
 
   &__c-list {
@@ -26,6 +31,25 @@
     &:last-child {
       margin-bottom: 0;
     }
+
+    &_link {
+      width: 40px;
+      height: 40px;
+      margin-right: 5px;
+      text-align: center;
+      background: $main-color;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px 2px #4b4b4b;
+      transition: box-shadow $regular-time-transition;
+
+      &:active {
+        box-shadow: none;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
   }
 
   &__c-text {
@@ -36,6 +60,12 @@
 
     &:hover {
       border-bottom: 2px solid #e6e9ed;
+    }
+
+    &_link {
+      font-size: 15px;
+      line-height: 40px;
+      color: white;
     }
   }
 }
