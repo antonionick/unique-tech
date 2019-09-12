@@ -4,7 +4,7 @@
 
   &__lists {
     margin-bottom: 50px;
-    justify-content: flex-start;
+    justify-content: space-around;
   }
 
   &__links {
@@ -23,7 +23,6 @@
   &__c-list {
     flex-direction: column;
     justify-content: flex-start;
-    margin-right: 146px;
   }
 
   &__c-title {
