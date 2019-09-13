@@ -1,6 +1,9 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+// const ImageWebpackLoader = require("image-webpack-loader");
+
+const fs = require('fs');
 
 module.exports = {
   entry: {
@@ -34,6 +37,23 @@ module.exports = {
           name: "[name].[ext]",
           outputPath: "fonts/",
         }
+      },
+      {
+        test: /\.(png|jp(e?)g)/i,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "imgs/",
+            }
+          },
+
+          {
+            loader: 'image-webpack-loader',
+            options: {},
+          }
+        ],
       },
     ]
   },
