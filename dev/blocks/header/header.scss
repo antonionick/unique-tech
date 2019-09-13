@@ -6,7 +6,8 @@
   }
 
   &__wrapper-info {
-    padding-bottom: 55px;
+    max-height: 600px;
+    padding-bottom: 59px;
   }
 
   &__nav {
@@ -46,38 +47,34 @@
   &__text {
     max-width: 362px;
     max-height: 270px;
-    margin: 6px 0 23px;
+    margin: 6px 0 22px;
     line-height: 1.9em;
     font-size: 16px;
   }
 
   &__wrapper-img {
     position: relative;
-    overflow: visible;
-    margin-top: 55px;
+    align-self: flex-end;
+    margin: 55px 0 0;
     max-width: 625px;
+    width: 60%;
     max-height: 358px;
   }
 
   &__arrow {
     top: -2%;
-    right: -70%;
+    right: 28%;
     max-width: 390px;
-    transform: rotate(-1deg);
-  }
-
-  &__img {
-    position: absolute;
-    left: -35px;
-    width: 106%;
-    height: 365px;
+    transform: rotate(-2deg);
   }
 
   &__slider {
-    margin: 0 0 20px 5px;
+    align-self: stretch;
+    margin: 40px 0 0 25px;
   }
 
   &_button-effect {
+    padding: 13px 0 14px;
     box-shadow: 0 0 6px 2px #d9a330;
 
     &:hover {

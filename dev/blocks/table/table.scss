@@ -69,7 +69,7 @@
 
   &__price {
     position: absolute;
-    bottom: -8px;
+    top: 58px;
     left: 0;
     right: 0;
     font-size: 25px;
@@ -83,7 +83,7 @@
     }
 
     &_size_more {
-      bottom: -24px;
+      top: 36px;
     }
   }
 
@@ -112,6 +112,10 @@
   &_color {
     &_red {
       color: $color-red;
+    }
+
+    &_main {
+      color: $main-color;
     }
   }
 }
