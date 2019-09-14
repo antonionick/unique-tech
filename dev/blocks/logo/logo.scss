@@ -3,11 +3,19 @@
   font-family: Roboto-Black, ﻿AdobeInvisFont, ﻿MyriadPro-Regular, sans-serif;
   color: $main-text-color;
 
+  @media only screen and (max-width: 1000px) {
+    margin: 0;
+  }
+
   &__title {
     margin: 0;
     font-size: 26px;
     font-weight: bold;
     color: $main-text-color;
+
+    @media only screen and (max-width: 1000px) {
+      font-size: 32px;
+    }
 
     &_unique {
       margin-right: 6px;

@@ -58,6 +58,10 @@
       width: 50%;
       height: 463px;
       background: white;
+
+      @media only screen and (max-width: 1000px) {
+        width: 50%;
+      }
     }
 
     &_all-area {
@@ -95,6 +99,16 @@
     max-height: 140px;
     width: 32%;
     padding: 20px 9px 9px 51px;
+
+    @media only screen and (max-width: 1000px) {
+      width: 50%;
+    }
+
+    &:nth-child(3) {
+      @media only screen and (max-width: 1000px) {
+        margin-top: 30px;
+      }
+    }
   }
 
   &_size {

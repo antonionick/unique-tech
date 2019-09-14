@@ -31,6 +31,10 @@
     display: block;
     top: 28px;
 
+    @media only screen and (max-width: 1000px) {
+      display: none;
+    }
+
     &_theme_common {
       right: 26%;
     }
@@ -49,28 +53,52 @@
   &_section {
     &_we-do {
       padding: 141px 0 130px;
+
+      @media only screen and (max-width: 1000px) {
+        padding: 100px 0;
+      }
     }
 
     &_we-work {
       background: #f9f9f9;
       padding: 86px 0 110px;
+
+      @media only screen and (max-width: 1000px) {
+        padding-bottom: 80px;
+      }
     }
 
     &_features {
       padding: 134px 0 146px;
 
+      @media only screen and (max-width: 1000px) {
+        padding: 100px 0;
+      }
+
       &-offsets {
         margin-top: 53px;
+
+        @media only screen and (max-width: 1000px) {
+          margin-top: 30px;
+        }
       }
 
       &-wrapper {
         flex-wrap: wrap;
         margin-top: 150px;
+
+        @media only screen and (max-width: 1000px) {
+          margin-top: 80px;
+        }
       }
     }
 
     &_packages {
       padding-bottom: 167px;
+
+      @media only screen and (max-width: 1000px) {
+        padding-bottom: 100px;
+      }
 
       &_buttons {
         max-width: 780px;
@@ -86,9 +114,17 @@
     &_business {
       padding: 146px 0 116px;
 
+      @media only screen and (max-width: 1000px) {
+        padding: 100px 0;
+      }
+
       &-title {
         width: 447px;
         margin-bottom: 134px;
+
+        @media only screen and (max-width: 1000px) {
+          margin-bottom: 80px;
+        }
       }
 
       &-arrow {
@@ -99,6 +135,13 @@
         flex-wrap: wrap;
         padding: 89px 96px 70px 98px;
         background: #f4f4f4;
+        border-radius: 4px;
+
+        @media only screen and (max-width: 1000px) {
+          max-width: 600px;
+          padding: 60px;
+          margin: 0 auto;
+        }
       }
     }
 
@@ -106,6 +149,10 @@
       &-title {
         width: 447px;
         margin-bottom: 140px;
+
+        @media only screen and (max-width: 1000px) {
+          margin-bottom: 80px;
+        }
       }
 
       &-arrow {
@@ -128,9 +175,17 @@
     &_support {
       padding: 130px 0 20px;
 
+      @media only screen and (max-width: 1000px) {
+        padding-top: 100px;
+      }
+
       &-title {
         width: 447px;
         margin-bottom: 150px;
+
+        @media only screen and (max-width: 1000px) {
+          margin-bottom: 80px;
+        }
       }
 
       &-arrow {
@@ -146,10 +201,18 @@
     &_creative {
       padding-bottom: 83px;
 
+      @media only screen and (max-width: 1000px) {
+        padding-bottom: 0;
+      }
+
       &-page {
         max-width: 1006px;
         padding: 110px 0 56px;
         box-shadow: 0 0 2px 1px #fffaf6;
+
+        @media only screen and (max-width: 1000px) {
+          padding: 50px 0;
+        }
       }
 
       &-info {
@@ -173,8 +236,16 @@
       max-width: 945px;
       margin: 206px auto 0;
 
+      @media only screen and (max-width: 1000px) {
+        margin-top: 80px;
+      }
+
       &-first {
         margin-top: 184px;
+
+        @media only screen and (max-width: 1000px) {
+          margin-top: 80px;
+        }
       }
     }
 
@@ -182,6 +253,10 @@
       align-content: center;
       max-height: none;
       margin-top: 147px;
+
+      @media only screen and (max-width: 1000px) {
+        margin-top: 80px;
+      }
 
       &_img {
         max-width: 991px;
@@ -199,6 +274,10 @@
 
     &_packages {
       margin-top: 202px;
+
+      @media only screen and (max-width: 1000px) {
+        margin-top: 110px;
+      }
 
       &_buttons {
         width: 192px;
@@ -265,8 +344,16 @@
     &_business {
       width: 25%;
 
+      @media only screen and (max-width: 1000px) {
+        width: 50%;
+      }
+
       &-next-layer {
         margin-top: 26px;
+
+        @media only screen and (max-width: 1000px) {
+          margin-top: 30px;
+        }
       }
 
       &_title {
@@ -277,6 +364,10 @@
 
         &-large {
           margin-top: 22px;
+
+          @media only screen and (max-width: 1000px) {
+            margin-top: 0;
+          }
         }
       }
 
@@ -286,6 +377,11 @@
         width: 100%;
         height: 135px;
         margin-bottom: 32px;
+
+        @media only screen and (max-width: 1000px) {
+          width: 200px;
+          margin: 0 auto 20px;
+        }
       }
 
       &-img {
@@ -303,6 +399,10 @@
 
         &-3 {
           left: -415px;
+
+          @media only screen and (max-width: 1000px) {
+            left: -423px;
+          }
         }
 
         &-4 {
@@ -319,6 +419,10 @@
 
         &-7 {
           left: -397px;
+
+          @media only screen and (max-width: 1000px) {
+            left: -402px;
+          }
         }
 
         &-8 {
