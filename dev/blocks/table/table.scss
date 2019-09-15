@@ -16,10 +16,14 @@
     position: relative;
     display: table-cell;
     width: 260px;
-    height: 45px;
+    padding: 10px 10px 15px;
     vertical-align: middle;
     text-align: center;
     border: 1px solid $main-color;
+
+    @media only screen and (max-width: 1000px) {
+      padding-bottom: 10px;
+    }
 
     &:first-child {
       border-left: none;
@@ -38,6 +42,14 @@
     &_prices {
       height: 89px;
       vertical-align: bottom;
+
+      @media only screen and (max-width: 768px) {
+        height: 30px;
+      }
+
+      @media only screen and (max-width: 480px) {
+        height: 20px;
+      }
     }
   }
 
@@ -50,10 +62,29 @@
     font-size: 22px;
     color: rgba(141, 141, 141, 255);
 
+    @media only screen and (max-width: 1000px) {
+      top: -12px;
+    }
+
+    @media only screen and (max-width: 480px) {
+      top: -8px;
+      font-size: 20px;
+    }
+
     &_size_more {
       top: -22px;
       color: $color-red;
       font-size: 28px;
+
+      @media only screen and (max-width: 768px) {
+        top: -18px;
+        font-size: 26px;
+      }
+
+      @media only screen and (max-width: 480px) {
+        top: -12px;
+        font-size: 22px;
+      }
     }
   }
 
@@ -61,9 +92,17 @@
     font-family: Roboto-Medium, ﻿AdobeInvisFont, ﻿MyriadPro-Regular, sans-serif;
     color: rgba(179, 179, 179, 255);
 
+    @media only screen and (max-width: 480px) {
+      font-size: 14px
+    }
+
     &_size_more {
       font-size: 18px;
       color: black;
+
+      @media only screen and (max-width: 480px) {
+        font-size: 16px
+      }
     }
   }
 
@@ -74,16 +113,50 @@
     right: 0;
     font-size: 25px;
 
+    @media only screen and (max-width: 768px) {
+      top: 30px;
+      font-size: 22px;
+    }
+
+    @media only screen and (max-width: 480px) {
+      top: 25px;
+      font-size: 18px;
+    }
+
     &-number {
       font-size: 34px;
 
+      @media only screen and (max-width: 768px) {
+        font-size: 28px;
+      }
+
+      @media only screen and (max-width: 480px) {
+        font-size: 22px;
+      }
+
       &_size_more {
         font-size: 67px;
+
+        @media only screen and (max-width: 768px) {
+          font-size: 36px;
+        }
+
+        @media only screen and (max-width: 480px) {
+          font-size: 26px;
+        }
       }
     }
 
     &_size_more {
       top: 36px;
+
+      @media only screen and (max-width: 768px) {
+        top: 30px;
+      }
+
+      @media only screen and (max-width: 480px) {
+        top: 25px;
+      }
     }
   }
 

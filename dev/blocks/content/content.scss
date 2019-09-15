@@ -14,6 +14,11 @@
     font-size: 18px;
     color: rgba(37, 37, 37, 255);
 
+    @media only screen and (max-width: 768px) {
+      order: 1;
+      font-size: 20px;
+    }
+
     &_theme_small {
       margin: 0 0 3px;
       font-family: Roboto-Regular, ﻿AdobeInvisFont, ﻿MyriadPro-Regular, sans-serif;
@@ -34,6 +39,18 @@
     line-height: 1.5em;
     color: rgba(54, 54, 54, 255);
 
+    @media only screen and (max-width: 768px) {
+      order: 3;
+      max-width: 100%;
+      width: 100%;
+      text-align: justify;
+      font-size: 15px;
+    }
+
+    @media only screen and (max-width: 480px) {
+      max-height: 245px;
+    }
+
     &_theme_small {
       max-height: 75px;
       width: 100%;
@@ -41,6 +58,15 @@
       padding: 0;
       font-size: 14px;
       line-height: 1.8em;
+
+      @media only screen and (max-width: 768px) {
+        max-height: 100px;
+        text-align: left;
+      }
+
+      @media only screen and (max-width: 480px) {
+        max-height: 150px;
+      }
     }
   }
 
@@ -62,10 +88,46 @@
       @media only screen and (max-width: 1000px) {
         width: 50%;
       }
+
+      @media only screen and (max-width: 768px) {
+        order: 2;
+        max-width: 90%;
+        width: 100%;
+        height: auto;
+        margin: 0 0 15px 0;
+      }
+
+      @media only screen and (max-width: 480px) {
+        max-width: 100%;
+      }
     }
 
     &_all-area {
       min-height: 252px;
+
+      @media only screen and (max-width: 768px) {
+        order: 2;
+        max-width: 75%;
+        max-height: none;
+        min-height: 0;
+        width: 100%;
+        margin: 0;
+      }
+
+      @media only screen and (max-width: 480px) {
+        max-width: 100%;
+      }
+    }
+
+    &_first {
+      align-self: flex-end;
+      order: 1;
+      margin-right: 0;
+
+      @media only screen and (max-width: 768px) {
+        order: 2;
+        align-self: center;
+      }
     }
   }
 
@@ -78,6 +140,10 @@
       width: 90%;
       height: 438px;
       margin: 13px auto 0;
+
+      @media only screen and (max-width: 480px) {
+        height: auto;
+      }
     }
   }
 
@@ -86,6 +152,14 @@
     left: 10px;
     top: 23px;
     font-size: 28px;
+  }
+
+  &__button {
+    @media only screen and (max-width: 768px) {
+      order: 4;
+      max-width: 100%;
+      width: 100%;
+    }
   }
 
   &__button-text {
@@ -104,10 +178,32 @@
       width: 50%;
     }
 
+    &:nth-child(2) {
+      @media only screen and (max-width: 480px) {
+        margin-top: 10px;
+      }
+    }
+
     &:nth-child(3) {
       @media only screen and (max-width: 1000px) {
         margin-top: 30px;
       }
+
+      @media only screen and (max-width: 768px) {
+        margin-top: 20px;
+      }
+
+      @media only screen and (max-width: 480px) {
+        margin-top: 10px;
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      max-height: 400px;
+    }
+
+    @media only screen and (max-width: 480px) {
+      width: 100%;
     }
   }
 

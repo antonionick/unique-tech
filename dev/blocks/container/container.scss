@@ -6,8 +6,9 @@
 
   &__title {
     align-self: center;
-    width: 330px;
-    padding: 13px 0;
+    max-width: 330px;
+    width: 100%;
+    padding: 13px 10px;
     font-family: SourceSansPro-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular, sans-serif;
     font-size: 26px;
     text-align: center;
@@ -16,6 +17,14 @@
     border-radius: 4px;
     box-shadow: 0 0 6px 2px #bababa;
     transition: box-shadow $regular-time-transition;
+
+    @media only screen and (max-width: 768px) {
+      max-width: 100%;
+    }
+
+    @media only screen and (max-width: 480px) {
+      font-size: 22px;
+    }
 
     &:hover {
       box-shadow: 0 0 6px 2px #9b9b9b;
@@ -57,6 +66,10 @@
       @media only screen and (max-width: 1000px) {
         padding: 100px 0;
       }
+
+      @media only screen and (max-width: 768px) {
+        padding-bottom: 80px;
+      }
     }
 
     &_we-work {
@@ -65,6 +78,10 @@
 
       @media only screen and (max-width: 1000px) {
         padding-bottom: 80px;
+      }
+
+      @media only screen and (max-width: 768px) {
+        padding: 60px 0;
       }
     }
 
@@ -81,6 +98,14 @@
         @media only screen and (max-width: 1000px) {
           margin-top: 30px;
         }
+
+        @media only screen and (max-width: 768px) {
+          margin-top: 20px;
+        }
+
+        @media only screen and (max-width: 480px) {
+          margin-top: 10px;
+        }
       }
 
       &-wrapper {
@@ -89,6 +114,10 @@
 
         @media only screen and (max-width: 1000px) {
           margin-top: 80px;
+        }
+
+        @media only screen and (max-width: 768px) {
+          margin-top: 60px;
         }
       }
     }
@@ -103,12 +132,21 @@
       &_buttons {
         max-width: 780px;
         margin: 55px auto 0;
+
+        @media only screen and (max-width: 768px) {
+          justify-content: space-around;
+          margin-top: 30px;
+        }
       }
     }
 
     &_history {
       padding: 65px 0 66px;
       background: #f9f9f9;
+
+      @media only screen and (max-width: 768px) {
+        padding: 60px 0;
+      }
     }
 
     &_business {
@@ -119,11 +157,16 @@
       }
 
       &-title {
-        width: 447px;
+        max-width: 447px;
         margin-bottom: 134px;
 
         @media only screen and (max-width: 1000px) {
           margin-bottom: 80px;
+        }
+
+        @media only screen and (max-width: 768px) {
+          max-width: 100%;
+          margin-bottom: 60px;
         }
       }
 
@@ -142,16 +185,29 @@
           padding: 60px;
           margin: 0 auto;
         }
+
+        @media only screen and (max-width: 768px) {
+          padding: 40px 20px;
+        }
+        @media only screen and (max-width: 480px) {
+          margin: 0 20px;
+        }
       }
     }
 
     &_team {
       &-title {
-        width: 447px;
+        max-width: 447px;
+        width: 100%;
         margin-bottom: 140px;
 
         @media only screen and (max-width: 1000px) {
           margin-bottom: 80px;
+        }
+
+        @media only screen and (max-width: 768px) {
+          max-width: none;
+          margin-bottom: 60px;
         }
       }
 
@@ -165,7 +221,9 @@
       }
 
       &-page {
+        flex-wrap: wrap;
         align-items: flex-start;
+        justify-content: center;
         max-width: 813px;
         width: 100%;
         margin: 0 auto;
@@ -180,11 +238,17 @@
       }
 
       &-title {
-        width: 447px;
+        max-width: 447px;
+        width: 100%;
         margin-bottom: 150px;
 
         @media only screen and (max-width: 1000px) {
           margin-bottom: 80px;
+        }
+
+        @media only screen and (max-width: 768px) {
+          max-width: none;
+          margin-bottom: 60px;
         }
       }
 
@@ -195,6 +259,11 @@
       &-info {
         max-height: 300px;
         margin-bottom: 15px;
+
+        @media only screen and (max-width: 768px) {
+          flex-wrap: nowrap;
+          max-height: none;
+        }
       }
     }
 
@@ -221,6 +290,16 @@
         align-items: center;
         margin-top: -1px;
         padding: 22px 31px 23px 46px;
+
+        @media only screen and (max-width: 768px) {
+          flex-wrap: nowrap;
+          padding: 15px 10px;
+        }
+
+        @media only screen and (max-width: 480px) {
+          flex-wrap: wrap;
+          align-content: center;
+        }
       }
 
       &-content {
@@ -240,11 +319,22 @@
         margin-top: 80px;
       }
 
+      @media only screen and (max-width: 768px) {
+        flex-wrap: nowrap;
+        align-items: center;
+        max-height: none;
+        margin-top: 60px;
+      }
+
       &-first {
         margin-top: 184px;
 
         @media only screen and (max-width: 1000px) {
           margin-top: 80px;
+        }
+
+        @media only screen and (max-width: 768px) {
+          margin-top: 60px;
         }
       }
     }
@@ -269,6 +359,10 @@
     &_features-title {
       &_large {
         margin-bottom: 15px;
+
+        @media only screen and (max-width: 1000px) {
+          margin-bottom: 3px;
+        }
       }
     }
 
@@ -279,25 +373,52 @@
         margin-top: 110px;
       }
 
+      @media only screen and (max-width: 768px) {
+        margin-top: 80px;
+      }
+
       &_buttons {
-        width: 192px;
+        max-width: 192px;
+        width: 100%;
         max-height: 45px;
         font-family: Roboto-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular, sans-serif;
         font-size: 14px;
         color: white;
         background: #a5a5a5;
 
+        @media only screen and (max-width: 768px) {
+          max-width: 150px;
+        }
+
+        @media only screen and (max-width: 480px) {
+          max-width: 130px;
+        }
+
         &_theme_yellow {
           background: $main-color;
         }
 
         &_size_more {
-          width: 215px;
+          max-width: 215px;
+          width: 100%;
           max-height: 59px;
           padding: 19px 0;
           font-family: OpenSans, ﻿AdobeInvisFont, ﻿MyriadPro-Regular, sans-serif;
           font-size: 16px;
           background: $color-red;
+
+          @media only screen and (max-width: 768px) {
+            flex: 0 0 auto;
+            max-width: 170px;
+            margin: 0 5px;
+          }
+
+          @media only screen and (max-width: 480px) {
+            max-width: 140px;
+            margin: 0 5px;
+            padding: 14px 0;
+            font-size: 15px;
+          }
         }
       }
     }
@@ -305,19 +426,35 @@
     &_history {
       max-height: 463px;
 
+      @media only screen and (max-width: 768px) {
+        flex-wrap: nowrap;
+        align-items: center;
+        max-height: none;
+      }
+
       &-info {
         width: 48.5%;
       }
 
       &-title {
         align-self: flex-start;
-        width: 220px;
+        max-width: 220px;
         padding: 11px 15px 11px 0;
         margin-bottom: 18px;
         text-align: end;
         font-size: 28px;
         letter-spacing: 1px;
         box-shadow: none;
+
+        @media only screen and (max-width: 768px) {
+          max-width: 100%;
+          margin-bottom: 40px;
+          text-align: center;
+        }
+
+        @media only screen and (max-width: 480px) {
+          font-size: 22px;
+        }
 
         &:hover {
           box-shadow: none;
@@ -330,14 +467,27 @@
         margin-bottom: 11px;
         font-size: 16px;
         line-height: 1.9em;
+
+        @media only screen and (max-width: 768px) {
+          max-width: 100%;
+          text-align: justify;
+        }
       }
 
       &-button {
-        width: 191px;
+        max-width: 191px;
+        width: 100%;
         padding: 17px 0;
         font-family: OpenSans-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular, sans-serif;
         font-size: 12px;
         text-transform: uppercase;
+
+        @media only screen and (max-width: 768px) {
+          order: 4;
+          max-width: 100%;
+          padding: 15px 0;
+          font-size: 14px;
+        }
       }
     }
 
@@ -346,6 +496,10 @@
 
       @media only screen and (max-width: 1000px) {
         width: 50%;
+      }
+
+      @media only screen and (max-width: 480px) {
+        width: 100%;
       }
 
       &-next-layer {
@@ -436,6 +590,27 @@
       flex-wrap: nowrap;
       width: 20%;
 
+      @media only screen and (max-width: 768px) {
+        width: 33%;
+      }
+
+      @media only screen and (max-width: 480px) {
+        width: 50%;
+      }
+
+      &:nth-child(3) {
+        @media only screen and (max-width: 480px) {
+          margin-top: 20px;
+        }
+      }
+
+      &:nth-child(4),
+      &:nth-child(5) {
+        @media only screen and (max-width: 768px) {
+          margin-top: 20px;
+        }
+      }
+
       &-title {
         align-self: stretch;
         margin-bottom: 10px;
@@ -480,16 +655,34 @@
         margin-bottom: 22px;
         font-size: 17px;
         line-height: 1.7em;
+
+        @media only screen and (max-width: 768px) {
+          order: 2;
+          max-width: 100%;
+          max-height: 310px;
+          width: 100%;
+          margin-bottom: 10px;
+        }
       }
 
       &-button {
         width: 190px;
         padding: 13px 0 15px;
 
+        @media only screen and (max-width: 768px) {
+          order: 3;
+          max-width: 100%;
+          width: 100%;
+        }
+
         &-text {
           font-family: OpenSans-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular, sans-serif;
           font-size: 12px;
           font-weight: 500;
+
+          @media only screen and (max-width: 768px) {
+            font-size: 13px;
+          }
         }
       }
 
@@ -499,6 +692,16 @@
         max-height: 300px;
         min-height: 300px;
         width: 50%;
+
+        @media only screen and (max-width: 768px) {
+          order: 1;
+          align-self: center;
+          max-width: 100%;
+          max-height: 500px;
+          min-height: 0;
+          width: 100%;
+          margin-bottom: 10px;
+        }
       }
     }
 
@@ -509,11 +712,25 @@
         max-height: 417px;
         width: 100%;
         margin-right: 0;
+
+        @media only screen and (max-width: 768px) {
+          max-height: 430px;
+          min-height: 290px;
+        }
+
+        @media only screen and (max-width: 480px) {
+          min-height: 0;
+          text-align: center;
+        }
       }
 
       &-img {
         height: auto;
         margin-top: -111px;
+
+        @media only screen and (max-width: 768px) {
+          margin-top: 0;
+        }
       }
 
       &-layer-img {
@@ -532,18 +749,40 @@
         font-size: 22px;
         color: white;
         text-transform: uppercase;
+
+        @media only screen and (max-width: 768px) {
+          font-size: 20px;
+        }
+
+        @media only screen and (max-width: 480px) {
+          text-align: center;
+          font-size: 18px;
+        }
       }
 
       &-button {
-        width: 159px;
+        max-width: 159px;
+        width: 100%;
         padding: 12px 0 10px;
-        font-family:﻿OpenSans-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular, sans-serif;
+        font-family: ﻿OpenSans-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular, sans-serif;
         font-size: 20px;
         font-weight: bold;
         color: rgba(58, 58, 58, 255);
         letter-spacing: -.5px;
         background: white;
         box-shadow: 0 2px 2px 1px #d9a330;
+
+        @media only screen and (max-width: 768px) {
+          max-width: 130px;
+          padding: 10px 0;
+          font-size: 16px;
+        }
+
+        @media only screen and (max-width: 480px) {
+          max-width: 100%;
+          padding: 6px 0;
+          margin-top: 5px;
+        }
       }
     }
   }
