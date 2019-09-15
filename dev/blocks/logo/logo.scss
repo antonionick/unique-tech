@@ -17,6 +17,10 @@
       font-size: 32px;
     }
 
+    @media only screen and (max-width: 768px) {
+      font-size: 28px;
+    }
+
     &_unique {
       margin-right: 6px;
       padding: 0 11px;
