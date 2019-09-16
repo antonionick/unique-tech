@@ -3,7 +3,7 @@
   background: #363636;
 
   @media only screen and (max-width: 480px) {
-    padding-top: 30px;
+    padding-top: 50px;
   }
 
   &__lists {
@@ -15,10 +15,12 @@
     }
 
     @media only screen and (max-width: 768px) {
-      justify-content: space-between;
       flex-wrap: wrap;
-      max-width: 90%;
-      margin: 0 auto 50px;
+      margin-bottom: 50px;
+    }
+
+    @media only screen and (max-width: 480px) {
+      margin-bottom: 0;
     }
   }
 
@@ -47,7 +49,7 @@
     @media only screen and (max-width: 480px) {
       width: 100%;
       align-items: center;
-      margin-top: 30px;
+      margin-bottom: 50px;
 
       &:nth-child(2n) {
         align-items: center;

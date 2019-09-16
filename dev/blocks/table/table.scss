@@ -25,6 +25,11 @@
       padding-bottom: 10px;
     }
 
+    @media only screen and (max-width: 480px) {
+      padding: 20px 10px;
+    }
+
+
     &:first-child {
       border-left: none;
     }

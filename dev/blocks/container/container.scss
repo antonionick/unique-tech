@@ -5,6 +5,7 @@
   justify-content: space-between;
 
   &__title {
+    box-sizing: border-box;
     align-self: center;
     max-width: 330px;
     width: 100%;
@@ -353,6 +354,10 @@
         max-height: 855px;
         width: 100%;
         margin: 0 auto;
+
+        @media only screen and (max-width: 480px) {
+          width: 110%;
+        }
       }
     }
 
@@ -391,7 +396,9 @@
         }
 
         @media only screen and (max-width: 480px) {
+          align-self: flex-start;
           max-width: 130px;
+          max-height: none;
         }
 
         &_theme_yellow {
@@ -414,10 +421,13 @@
           }
 
           @media only screen and (max-width: 480px) {
+            align-self: stretch;
             max-width: 140px;
+            max-height: none;
             margin: 0 5px;
             padding: 14px 0;
             font-size: 15px;
+            line-height: 32px;
           }
         }
       }
@@ -786,4 +796,5 @@
       }
     }
   }
+
 }
