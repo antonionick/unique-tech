@@ -1,6 +1,6 @@
-##Unique Tech
+## Unique Tech
 
-###How to run
+### How to run
 
 - Download and install [Node.js](https://nodejs.org/en/) 
 - Type npm install into the console for loading modules
